@@ -6,11 +6,11 @@ export const routes: Routes = [
     {
         path: '',
         title: 'Survey Home',
-        component: HomeComponent,
+        component: HomeComponent
     },
     {
         path: 'survey',
         title: 'Survey',
-        component: SurveyComponent,
+        component: SurveyComponent
     }
 ];
