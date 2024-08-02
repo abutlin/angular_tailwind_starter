@@ -1,0 +1,21 @@
+<div class="d-flex flex-column">
+    <label>How Happy Are You?</label>
+    <div class="d-flex flex-col m-2">
+        @for (score of scores; track score) {
+            <button class="btn btn-secondary m-2" (click)="trackScore(score)">{{score}}</button>
+        }
+    </div>
+    <div class="d-flex flex-col m-5">
+        <label>Current Score {{sentiment}}</label>
+    </div>
+    <div class="d-flex flex-col">
+        <div class="d-flex flex-row">
+            <button class="btn btn-primary m-2" (click)="storeScore(sentiment)">Save Score</button>
+            <button class="btn btn-secondary m-2" (click)="resetScore()">Reset Score</button>
+        </div>
+    </div>
+    <div class="d-flex flex-col m-5">
+        <label>Tracked Scores: {{trackedScores()}}</label>
+    </div>
+</div>
+<a routerLink="" class="btn btn-primary m-6">Home</a>
