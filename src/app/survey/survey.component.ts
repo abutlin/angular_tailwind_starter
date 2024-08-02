@@ -6,7 +6,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterModule, RouterOutlet],
   templateUrl: './survey.component.html',
-  styleUrl: './survey.component.scss'
+  styleUrl: './survey.component.scss',
 })
 export class SurveyComponent {
   scores: number[] = [1, 2, 3, 4, 5];
